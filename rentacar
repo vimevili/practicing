@@ -1,0 +1,39 @@
+algoritmo "CalculoDeAluguelDeCarro"
+var
+
+c1, c2,t, d, t1, t2: real
+m: caractere
+Procedimento CalLux(A,B: REAL)
+   Inicio
+   Se (B > 200) entao
+      T1 <- B * 0.25
+   Senao
+      T1<- B * 0.30
+   FimSe
+   C1 <- (150 * A) + T1)
+   Escreva ("O preço a ser pago pelo aluguel é de R$ ",c1)
+   FimProcedimento
+Procedimento CalPop(A,B: REAL)
+   Inicio
+   Se (B > 100) entao
+      T2 <- B * 0.10
+   Senao
+      T2<- B * 0.20
+   FimSe
+   C2 <- (90 * A) + T2
+   Escreva ("O preço a ser pago pelo aluguel é de R$ ",c2)
+   FimProcedimento
+   
+inicio
+   Escreva ("Qual o modelo do carro? [L/P] ")
+   Leia (m)
+   Escreva ("Quantos dias de aluguel? ")
+   Leia (t)
+   Escreva ("Quantos quilometros percorridos? ")
+   Leia (d)
+   Se (m="l")entao
+      CalLux(T, D)
+   Senao
+      CalPop(T, D)
+   FimSe
+fimalgoritmo
