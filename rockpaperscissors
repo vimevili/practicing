@@ -1,0 +1,43 @@
+algoritmo "PedraPapelTesoura"
+var
+   T1, T2, T3: caractere
+inicio
+    Escreval ("Pedra, papeeeeel ou teeeeeesoura!")
+    Escreva ("O que você colocou?")
+    Leia (T1)
+    Escreva ("O que seu amigo colocou? ")
+    Leia (T2)
+    Se (T1 = "pedra") e (t2 = "tesoura") entao
+       Escreva ("Pedra quebra tesoura, você ganhou!")
+    Senao
+          Se (T1 = "papel") e (T2= "tesoura") entao
+             Escreva ("Tesoura corta papel, você perdeu!")
+          Senao
+             Se (t1 = "tesoura") e (t2 = "tesoura")entao
+                Escreva ("Foi um empate")
+             Senao
+                  Se (t1 = "pedra") e (t2 = "papel") entao
+                     Escreva ("Papel embrulha pedra, você perdeu!")
+                  Senao
+                     Se (T1 = "pedra") e (t2 = "pedra") entao
+                        Escreva ("Empate!")
+                     Senao
+                        Se (t1 = "tesoura") e (t2 = "pedra")entao
+                            Escreva ("Pedra quebra tesoura, você perdeu!")
+                        Senao
+                            Se (t1 = "tesoura") e (t2 = "papel") entao
+                                Escreva ("Tesoura corta papel, você ganhou!")
+                            Senao
+                                Se (t1 = "papel") e (t2 = "pedra") entao
+                                    Escreva ("Papel embrulha pedra, você ganhou!")
+                                Senao
+                                    Escreva ("Empate!")
+                            FimSe
+                        FimSe
+                     FimSe
+
+                  FimSe
+             FimSe
+          FimSe
+   FimSe
+fimalgoritmo
