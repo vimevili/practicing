@@ -1,0 +1,24 @@
+Algoritmo "ReducaoTempoVida"
+var
+A, CA, MT: real
+C: inteiro
+inicio
+    Escreval ("-------------------------------------------------------------------------------")
+    Escreval ("ATENÇÃO! ESSE CÁLCULO TEM A FUNÇÃO DE ALERTAR SOBRE OS RISCOS DO USO DO CIGARRO")
+    Escreval ("-------------------------------------------------------------------------------")
+    Escreval ("")
+    Escreval ("CALCULE O IMPACTO DO CIGARRO NA SUA SAÚDE")
+    Escreval ("")
+    Escreva ("Quantos cigarros por dia você fuma? ")
+    Leia (C)
+    Escreva ("Há quantos anos você fuma? ")
+    Leia (A)
+    MT <- (10*C)
+    CA <- (C*10*A*365)/1440
+    Escreval ("")
+    Escreval ("Para cada dia enquanto fumante, você perde", MT," minutos de vida")
+    Escreval ("")
+    Escreval ("Por ter fumado por", A," anos, calcula-se que você já tenha perdido ",CA:3, " dias de vida")
+    Escreval ("Mas não se assuste!")
+    Escreva ("Ainda há tempo de dar a volta por cima! Procure seu médico e inicie o tratamento!")
+FimAlgoritmo
